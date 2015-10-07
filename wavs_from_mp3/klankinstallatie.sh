@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #
-# opdracht klankinstallatie
+# Opdracht klankinstallatie
 # Vijay Weemhoff 2015
 #
 
