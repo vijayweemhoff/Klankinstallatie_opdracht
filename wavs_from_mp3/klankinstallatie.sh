@@ -2,6 +2,7 @@
 
 #
 # opdracht klankinstallatie
+# Vijay Weemhoff 2015
 #
 
 TARGETDIR=klankinstallatie_files
