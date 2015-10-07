@@ -35,6 +35,10 @@ for f in *.wav; do
  rm `basename $f .wav`_l_r.wav
 done
 
-#kipcorn
-
+for f in *.wav; do
+ sox $f `basename $f .wav`_effect.wav trim 4.0 8.0 pitch -3000 phaser 0.8 0.74 3 0.4 0.5 reverse
+ sox --norm `basename $f .wav`_effect.wav `basename $f .wav`_downpitch.wav fade h 0:01 0 0:01
+ mv -i `basename $f .wav`_downpitch.wav ${TARGETDIR}
+ rm `basename $f .wav`_effect.wav
+done
 
