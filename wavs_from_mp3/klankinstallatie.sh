@@ -58,9 +58,9 @@ fi
 
 
 #############################################################################################
-# compositie maken
-# 180 onderdelen 60 seconden 3 sporen alle samples 1 seconden.
-
+# compositie maken was vrijwillig 
+# en begreep niet echt hoe ik dat moest doen
+#############################################################################################
 
 
 
