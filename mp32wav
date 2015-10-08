@@ -1,0 +1,19 @@
+#! /bin/bash
+
+#
+# Vijay Weemhoff 2015
+#
+
+TARGETDIR=wavs_from_mp3
+
+if [ -d $TARGETDIR ] ; then
+  echo "$TARGETDIR directory exists"
+else
+  echo "creating $TARGETDIR directory"
+  mkdir $TARGETDIR
+fi
+
+for f in *.mp3; do
+ lame --decode $f `basename $f .mp3`.wav
+ mv -i `basename $f .mp3`.wav ${TARGETDIR}
+done
