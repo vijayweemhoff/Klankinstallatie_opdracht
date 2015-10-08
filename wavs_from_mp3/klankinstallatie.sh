@@ -8,6 +8,7 @@
 TARGETDIR=klankinstallatie_files
 if [ -d $TARGETDIR ] ; then
   echo "$TARGETDIR directory exists"
+  echo "Delete the directory before excecuting this script"
 else
   read -n1 -p "No directory yet, shall I make directory for you? [y,n]" doit
   case $doit in 
